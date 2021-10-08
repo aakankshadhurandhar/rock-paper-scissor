@@ -1,6 +1,14 @@
 # rock-paper-scissor
 
 
+TechStack:Reactjs,SCSS,React-router-dom 
+Other things used : Prettier, ESlint
+
+Component Breaking :
+- Header.js- Where we  will diplay our header
+- Play.js -Provides 3 choices
+- Game.js -Display results
+
 
 
 ## Building and running on localhost

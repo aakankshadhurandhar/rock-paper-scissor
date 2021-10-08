@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Game = ({ score, myChoice, setScore }) => {
+  //counter to pick house
   const [house, setHouse] = useState("");
+  //counter to determine win player
   const [playerWin, setPlayerWin] = useState("");
-
+  //timer counter
   const [counter, setCounter] = useState(3);
 
   const newHousePick = () => {
@@ -14,7 +16,7 @@ const Game = ({ score, myChoice, setScore }) => {
   useEffect(() => {
     newHousePick();
   }, []);
-
+  //logic for win,lose,draw
   const Result = () => {
     if (myChoice === "rock" && house === "scissors") {
       setPlayerWin("win");
