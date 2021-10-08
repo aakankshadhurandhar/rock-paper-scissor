@@ -35,11 +35,13 @@ Although i planned to implement backend using mongodb and express but couldnot i
 - The mongodb schema will be as follows :
    - Username:string req:true
    - Password:string req:true
-   - score:Number 
+   - score:array of numbers
 - The express api will have following methods:
    - signup 
    - login
    - rank 
    - logout
+   - Score update: It will represent the score of all the matches the user has played
+Storing a single score is of no use because which user will revisit the games to continue his previous game.
 - Also we will use protected routes for signin/signup
 - passport.js for authentication 
