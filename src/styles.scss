@@ -1,6 +1,11 @@
-$primary-color: white;
-$bg: black;
-h1 {
-  color: $primary-color;
-  background-color: $bg;
-}
+@import "./scss/variables";
+@import "./scss/globals";
+@import "./scss/mixins";
+
+
+
+@import "./scss/header";
+@import "./scss/play";
+@import "./scss/game";
+@import "./scss/footer";
+@import "./scss/modal";
