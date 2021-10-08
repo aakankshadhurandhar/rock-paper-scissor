@@ -1,17 +1,18 @@
 
-import React from "react";
+import React,{useState} from "react";
+import Header from "./components/Header";
 
-class App extends React.Component {
-  render() {
-    const { name } = this.props;
-    return (
-      <>
-        <h1>
-          Hello {name}
-        </h1>
-      </>
-    );
-  }
+
+
+function App() {
+  return (
+    <>
+      <div className="container">
+          <Header />
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
+
