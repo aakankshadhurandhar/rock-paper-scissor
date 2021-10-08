@@ -30,4 +30,16 @@ To create a production build:
 ```sh
 npm run build-prod
 ```
-
+Backend -
+Although i planned to implement backend using mongodb and express but couldnot implement it due to time constraint. Here is how i planned to implement it :
+- The mongodb schema will be as follows :
+   - Username:string req:true
+   - Password:string req:true
+   - score:Number 
+- The express api will have following methods:
+   - signup 
+   - login
+   - rank 
+   - logout
+- Also we will use protected routes for signin/signup
+- passport.js for authentication 
